@@ -44,8 +44,8 @@ export const smallBorder = css`
 
 export const smallButton = css`
   ${smallBorder}
-  color: ${({ theme }) => theme.fontSub};
-  border: 1px solid ${({ theme }) => theme.line};
+  color: var(--fontSub);
+  border: 1px solid var(--line);
   list-style: none;
 
   &:hover {
@@ -55,12 +55,12 @@ export const smallButton = css`
 
 export const backGrid = css`
   background-image: linear-gradient(
-      ${({ theme }) => theme.lineSub} 1px,
+      var(--lineSub) 1px,
       transparent 1px
     ),
     linear-gradient(
       to right,
-      ${({ theme }) => theme.lineSub} 1px,
+      var(--lineSub) 1px,
       transparent 1px
     );
   background-size: ${size.backGrid}px ${size.backGrid}px;

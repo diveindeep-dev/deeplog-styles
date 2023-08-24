@@ -22,7 +22,7 @@ export const Markdown = styled.div`
 
   h1,
   h2 {
-    border-bottom: 2px solid ${({ theme }) => theme.line};
+    border-bottom: 2px solid var(--line);
     margin: 2em 0 0.5em 0;
   }
 
@@ -63,9 +63,9 @@ export const Markdown = styled.div`
   .language-text {
     padding: 0.1rem 0.3rem;
     margin: 0px 0.1rem;
-    color: ${({ theme }) => theme.font};
-    background-color: ${({ theme }) => theme.bgSub};
-    border: 1px solid ${({ theme }) => theme.line};
+    color: var(--font);
+    background-color: var(--bgSub);
+    border: 1px solid var(--line);
     border-radius: 0.15rem;
     letter-spacing: 0px;
     word-break: break-word;
@@ -74,14 +74,14 @@ export const Markdown = styled.div`
   a {
     background: linear-gradient(
       transparent 60%,
-      ${({ theme }) => theme.gradientB} 0
+      var(--gradientB) 0
     );
     text-decoration: none;
     font-weight: 600;
     padding: 0 2px;
 
     &:hover {
-      background-color: ${({ theme }) => theme.gradientB};
+      background-color: var(--gradientB);
     }
   }
 
@@ -89,7 +89,7 @@ export const Markdown = styled.div`
     margin: 1rem 0.5rem;
     padding: 15px 20px;
     border-radius: 5px;
-    border: 1px solid ${({ theme }) => theme.line};
+    border: 1px solid var(--line);
   }
 
   details summary {
@@ -110,11 +110,11 @@ export const Markdown = styled.div`
     display: block;
     margin: 15px 10px;
     padding: 15px;
-    border: 1px solid ${({ theme }) => theme.line};
+    border: 1px solid var(--line);
     border-left: 3px solid ${color.main};
     font-size: 0.95rem;
     font-family: ${font.title};
-    background-color: ${({ theme }) => theme.bgSub};
+    background-color: var(--bgSub);
   }
 
   hr {
@@ -136,7 +136,7 @@ export const Markdown = styled.div`
     text-align: center;
     font-size: 0.9rem;
     margin-top: 0.5rem;
-    color: ${({ theme }) => theme.fontSub};
+    color: var(--fontSub);
   }
 
   table {
@@ -148,12 +148,12 @@ export const Markdown = styled.div`
     padding: 3px 10px;
     text-align: center;
     background: ${color.main};
-    border: 1px solid ${({ theme }) => theme.line};
+    border: 1px solid var(--line);
     color: ${color.light};
   }
 
   td {
     padding: 5px 15px;
-    border: 1px solid ${({ theme }) => theme.line};
+    border: 1px solid var(--line);
   }
 `;

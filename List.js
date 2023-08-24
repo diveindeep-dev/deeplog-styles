@@ -7,7 +7,7 @@ export const PostLi = styled.li`
   font-family: ${font.title};
 
   &:hover {
-    background-color: ${({ theme }) => theme.bgSub};
+    background-color: var(--bgSub);
   }
 
   ${media.mobile} {

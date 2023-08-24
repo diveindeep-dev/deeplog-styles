@@ -1,0 +1,23 @@
+.light {
+  --bg: #F5F5F6;
+  --bgSub: #ffffff;
+  --bgReverse: #2E3136;
+  --font: #2E3136;
+  --fontSub: #adadad;
+  --line: #D3D3D3;
+  --lineSub: #e0e6eb;
+  --gradientA: #8BB0DB;
+  --gradientB: #8ebcb9;
+}
+
+.dark {
+  --bg: #2E3136;
+  --bgSub: #212529;
+  --bgReverse: #F5F5F6;
+  --font: #F5F5F6;
+  --fontSub: #8e8e8e;
+  --line: #4c4c4c;
+  --lineSub: #3b3d42;
+  --gradientA: #002748;
+  --gradientB: #1F4C4A;
+}

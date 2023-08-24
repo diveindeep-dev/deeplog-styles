@@ -44,14 +44,14 @@ const GlobalStyle = createGlobalStyle`
   }
 
   .App {
-    background-color: ${({ theme }) => theme.bg};
+    background-color: var(--bg);
   }
 
   main {
     position: relative;
     padding-top: 150px;
-    color: ${({ theme }) => theme.font};
-    background-color: ${({theme}) => theme.bg};
+    color: var(--font);
+    background-color: var(--bg);
     z-index: 1;
   }
 `;
