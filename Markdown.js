@@ -51,6 +51,7 @@ export const Markdown = styled.div`
   ul li,
   ol li {
     font-weight: bold;
+    padding: 5px 0;
   }
 
   ul li ul li,
@@ -72,10 +73,7 @@ export const Markdown = styled.div`
   }
 
   a {
-    background: linear-gradient(
-      transparent 60%,
-      var(--gradientB) 0
-    );
+    background: linear-gradient(transparent 60%, var(--gradientB) 0);
     text-decoration: none;
     font-weight: 600;
     padding: 0 2px;
@@ -92,10 +90,15 @@ export const Markdown = styled.div`
     border: 1px solid var(--line);
   }
 
+  .gatsby-resp-image-wrapper {
+    margin: 1rem 0 0.5rem;
+  }
+
   details summary {
     cursor: pointer;
     color: ${color.main};
     font-weight: 600;
+    padding: 10px 0;
 
     &:focus {
       outline: none;
